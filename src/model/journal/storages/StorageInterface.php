@@ -1,7 +1,7 @@
 <?php
 
 
-namespace src\model\journal;
+namespace src\model\journal\Storages;
 
 
 interface StorageInterface

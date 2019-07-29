@@ -1,6 +1,8 @@
 <?php
 
-use model\journal\JournalReadWrite;
+include "src/model/journal/JournalReadWrite.php";
+use src\model\journal\JournalReadWrite;
+
 
 $journalCommands = [
     "Create journal : press 1",
@@ -25,7 +27,7 @@ while (1 == 1) {
     print_r($option);
 
     print "\n";
-    if(!is_numeric($option))
+    if(is_numeric($option))
     {
         print "Only integer value allowed";
     } else {

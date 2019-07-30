@@ -1,8 +1,7 @@
 <?php
 
 
-namespace src\model\journal\Storages;
-
+namespace src\model\journal\storages;
 
 interface StorageInterface
 {
@@ -10,7 +9,7 @@ interface StorageInterface
 
     public function deleteLastJournal();
 
-    public function  showJournals();
+    public function fetchJournals();
 
     public function makeConnection();
 }

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb27f603-dce7-42e5-963e-c45c529daaac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataFiles/journalEntries.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/handlers/JournalCommandHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/journal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataFiles/journalEntries.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataFiles/journalEntries.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/journal/JournalReadWrite.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/journal/JournalReadWrite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/journal/storages/FileStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/journal/storages/FileStorage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/journal/storages/StorageInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/journal/storages/StorageInterface.php" afterDir="false" />
@@ -26,8 +26,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/journal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="225">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/handlers/JournalCommandHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/journal/JournalReadWrite.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="37" column="71" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -35,26 +53,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/journal/storages/FileStorage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/journal/storages/StorageInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="36" />
+            <state relative-caret-position="307">
+              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/journal/JournalReadWrite.php">
+        <entry file="file://$PROJECT_DIR$/src/model/journal/storages/StorageInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+            <state relative-caret-position="165">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -75,10 +84,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/journal.php" />
-        <option value="$PROJECT_DIR$/src/model/journal/JournalReadWrite.php" />
-        <option value="$PROJECT_DIR$/src/model/journal/storages/FileStorage.php" />
+        <option value="$PROJECT_DIR$/src/model/journal/storages/ArrayToTextTable.php" />
+        <option value="$PROJECT_DIR$/src/dataFiles/journalEntries.csv" />
         <option value="$PROJECT_DIR$/src/model/journal/storages/StorageInterface.php" />
+        <option value="$PROJECT_DIR$/src/model/journal/storages/FileStorage.php" />
+        <option value="$PROJECT_DIR$/journal.php" />
+        <option value="$PROJECT_DIR$/src/handlers/JournalCommandHandler.php" />
+        <option value="$PROJECT_DIR$/src/model/journal/JournalReadWrite.php" />
       </list>
     </option>
   </component>
@@ -105,6 +117,12 @@
               <item name="journal" type="b2602c69:ProjectViewProjectNode" />
               <item name="journal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="journal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="journal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="journal" type="b2602c69:ProjectViewProjectNode" />
@@ -169,12 +187,12 @@
       <workItem from="1564308873948" duration="8055000" />
       <workItem from="1564380793300" duration="536000" />
       <workItem from="1564396652450" duration="119000" />
-      <workItem from="1564396856804" duration="5331000" />
+      <workItem from="1564396856804" duration="23318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5986000" />
+    <option name="totallyTimeSpent" value="23973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="7" />
@@ -205,6 +223,13 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/model/journal/storages/ArrayToTextTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dataFiles/journalEntries.csv">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor" />
@@ -212,31 +237,38 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/journal.php">
+    <entry file="file://$PROJECT_DIR$/src/model/journal/storages/StorageInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/journal/JournalReadWrite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        <state relative-caret-position="165">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/journal/storages/FileStorage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="307">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/journal/storages/StorageInterface.php">
+    <entry file="file://$PROJECT_DIR$/journal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handlers/JournalCommandHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/journal/JournalReadWrite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="37" column="71" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
         </state>
       </provider>
     </entry>

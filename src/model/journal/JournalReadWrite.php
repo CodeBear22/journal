@@ -35,6 +35,6 @@ class JournalReadWrite
 
     private function encryptText()
     {
-        mcrypt_ecb(MCRYPT_DES, $key_value, $plain_text, MCRYPT_ENCRYPT)
+//        mcrypt_ecb(MCRYPT_DES, $key_value, $plain_text, MCRYPT_ENCRYPT)
     }
 }

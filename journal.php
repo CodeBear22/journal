@@ -6,6 +6,14 @@ $storageType = "FILE";
 $user = "kunal";
 $decryptionKey = "enrique";
 
+$login = FALSE;
+
+
+while($login == FALSE)
+{
+
+}
+
 
 $journalCommandsHandler = new JournalCommandHandler($user, $decryptionKey, $storageType);
 

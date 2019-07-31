@@ -10,7 +10,7 @@ class FileStorage implements StorageInterface
     private $journalEntries;
     private $filename;
     CONST MAX_JOURNALS_COUNT = 50;
-    CONST FILE_STORAGE_DIR = "/home/shopclues/journal/src/dataFiles/";
+    CONST FILE_STORAGE_DIR = "/home/shopclues/journal/src/dataFiles/journal/";
 
 
     public function __construct()

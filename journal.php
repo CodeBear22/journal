@@ -1,17 +1,20 @@
 <?php
 
 require('src/handlers/JournalCommandHandler.php');
+require('src/handlers/UserCommandHandler.php');
 
 $storageType = "FILE";
 $user = "kunal";
 $decryptionKey = "enrique";
 
-$login = FALSE;
+$loggedIn = FALSE;
 
+$userCommandsHandler = new UserCommandHandler();
 
-while($login == FALSE)
+while($loggedIn == FALSE)
 {
-
+    $userCommandsHandler->showAllCommands();
+    $userCommandsHandler->getUserCommandAndExecute();
 }
 
 
@@ -20,7 +23,7 @@ $journalCommandsHandler = new JournalCommandHandler($user, $decryptionKey, $stor
 
 while (1 == 1) {
 
-    $journalCommandsHandler->showJournalCommands();
+    $journalCommandsHandler->showAllCommands();
     $journalCommandsHandler->getUserCommandAndExecute();
 }
 

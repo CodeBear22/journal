@@ -2,9 +2,13 @@
 
 require('src/model/journal/JournalReadWrite.php');
 
+require('src/handlers/CommandHandlerBehaviour.php');
+
 use src\model\journal\JournalReadWrite;
 
-class JournalCommandHandler
+
+
+class JournalCommandHandler implements CommandHandlerBehaviour
 {
     private $JournalReadWriteObject;
 
@@ -13,7 +17,7 @@ class JournalCommandHandler
         $this->JournalReadWriteObject = new JournalReadWrite($user, $encryptionKey, $storageType);
     }
 
-    public function showJournalCommands()
+    public function showAllCommands()
     {
         $journalCommands = [
             "Create journal : press 1",
@@ -24,7 +28,6 @@ class JournalCommandHandler
 
         print implode(PHP_EOL, $journalCommands);
         print PHP_EOL;
-
     }
 
     public function getUserCommandAndExecute()
@@ -86,7 +89,7 @@ class JournalCommandHandler
 
 
 
-    private function readUserInput()
+    public function readUserInput()
     {
         $handle = fopen ("php://stdin","r");
         $input = fgets($handle);
